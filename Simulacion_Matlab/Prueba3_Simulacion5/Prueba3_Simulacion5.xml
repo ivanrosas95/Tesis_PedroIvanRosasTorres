@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="Alcatraz" on="04/24/22||18:17:47" using="Simscape Multibody Link Version 7.4" from="Autodesk Inventor 2021 (Build 250183000, 183)"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="centimeter"/>
+<RootAssembly name="Prueba3_Simulacion5.iam" uid="Prueba3_Simulacion5.iam_{1DC7DDC0-41F4-8461-302E-EE9A97DEDC77}" version="{5EF25EE9-A8F2-00B4-85EC-A3BDA3187D60}">
+<AssemblyFile name="Prueba3_Simulacion5.iam" type="Inventor Assembly"/>
+<InstanceTree>
+<Instance name="Base_Prueba1:1" grounded="true" uid="Base_Prueba1:1" entityUid="Base_Prueba1.ipt_{CACFD000-4CA5-B674-844E-FFB4ED392355}">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>-1.1881529161872857 -1.1629451380706701 -6.3399020544176166</Translation>
+</Transform>
+</Instance>
+<Instance name="Eslabon1:1" uid="Eslabon1:1" entityUid="Eslabon1.ipt_{82AB5AB6-46CB-6CDD-0565-EDBAD53DE70B}">
+<Transform>
+<Rotation>0.82393604565907963 -0.56668279721876103 -6.3751490880656407e-16 0.56668279721876103 0.82393604565907963 7.7141890064667575e-16 0 -9.9686857033666318e-16 1.0000000000000004</Rotation>
+<Translation>1.3598278412737606 -18.496084833443909 3.2020636980711976</Translation>
+</Transform>
+</Instance>
+<Instance name="Eslabon2:1" uid="Eslabon2:1" entityUid="Eslabon2.ipt_{8CA78163-429C-B370-C041-19B7C0B92F1C}">
+<Transform>
+<Rotation>0.82209036096177923 -0.56935703948729 1.6788565993931031e-16 0.56935703948729 0.82209036096177923 1.4065523430057126e-15 -9.3884766067745786e-16 -1.060726241057787e-15 1</Rotation>
+<Translation>-20.44107947355181 -39.364977104676399 23.330974404909817</Translation>
+</Transform>
+</Instance>
+<Instance name="Eslabon3:1" uid="Eslabon3:1" entityUid="Eslabon3.ipt_{C29D933B-49EB-63ED-5448-AE984CDB08CB}">
+<Transform>
+<Rotation>0.81298434757368987 0.5822855404354309 -1.2312638832013487e-15 0.5822855404354309 -0.81298434757368987 -3.845472111569928e-15 -3.2401610714903696e-15 2.4093614800889732e-15 -1</Rotation>
+<Translation>-18.852936103731203 -2.9442099937342858 23.638245943978998</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+</Constraints>
+<Joints>
+<Revolute name="De rotación:1">
+<BaseFrame>
+<InstancePath>
+<Uid>Base_Prueba1:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>5.9676646464422972e-16 -1 0 1 5.9676646464422972e-16 5.6660188047742309e-16 -5.6660188047742309e-16 0 1</Rotation>
+<Translation>0.71707085870158183 2.0185421603632197 8.1399020544176164</Translation>
+</Transform>
+</BaseFrame>
+<FollowerFrame>
+<InstancePath>
+<Uid>Eslabon1:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>2.4980018054066028e-14 -1 4.1633363423445461e-16 1 2.4980018054066028e-14 -5.3492759652349693e-16 5.3492759652348657e-16 4.1633363423446797e-16 1</Rotation>
+<Translation>9.4577125429543347 16.982093367952579 -1.4020636980711814</Translation>
+</Transform>
+</FollowerFrame>
+</Revolute>
+<Revolute name="De rotación:2">
+<BaseFrame>
+<InstancePath>
+<Uid>Eslabon1:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>-1 -2.9864999362416717e-14 -1.9949319973734019e-16 2.9864999362416717e-14 -1 -7.9473508028969957e-16 -1.9949319973731645e-16 -7.9473508028970549e-16 1</Rotation>
+<Translation>-9.8922874570455974 16.982093367953144 5.9979363019288128</Translation>
+</Transform>
+</BaseFrame>
+<FollowerFrame>
+<InstancePath>
+<Uid>Eslabon2:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>-0.86602540378444637 0.49999999999998646 -1.2385264582538407e-15 -0.49999999999998646 -0.86602540378444637 -8.4884820665975181e-16 -1.497019479436867e-15 -1.1586088179731119e-16 1</Rotation>
+<Translation>19.967111545436723 21.757762082550084 -14.130974404909786</Translation>
+</Transform>
+</FollowerFrame>
+</Revolute>
+<Revolute name="De rotación:3">
+<BaseFrame>
+<InstancePath>
+<Uid>Eslabon2:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>-1 1.5154544286133384e-14 -2.332949736075846e-15 1.5154544286133384e-14 1 -2.6019326819255834e-16 2.332949736075842e-15 -2.6019326819259369e-16 -1</Rotation>
+<Translation>6.6171115454367202 21.757762082550293 -12.430974404909783</Translation>
+</Transform>
+</BaseFrame>
+<FollowerFrame>
+<InstancePath>
+<Uid>Eslabon3:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>-1.1657341758564104e-15 1 -1.2157274055093969e-16 -1 -1.1657341758564106e-15 -1.1900918973564794e-15 -1.1900918973564796e-15 1.2157274055093831e-16 1</Rotation>
+<Translation>-15.538082758499748 7.0343551976305871 12.738245943979063</Translation>
+</Transform>
+</FollowerFrame>
+</Revolute>
+</Joints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="Base_Prueba1.ipt" uid="Base_Prueba1.ipt_{CACFD000-4CA5-B674-844E-FFB4ED392355}" version="{2C2AFA6F-6D1D-4BB6-2CDA-CAF8D333514C}">
+<PartFile name="Base_Prueba1.ipt" type="Inventor Part"/>
+<MassProperties>
+<Mass>0.20420430699114683</Mass>
+<CenterOfMass>0.71092537484307516 0.90381040774296706 4.4948927783035284</CenterOfMass>
+<Inertia>2.5789492885375749 2.4821138720212077 2.0876611770632971 -0.18181040011547883 -0.0008340607295115206 -0.00039322256387433187</Inertia>
+</MassProperties>
+<GeometryFile name="Base_Prueba1_ipt_b9ff263c.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Diffuse r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Specular r="0" g="0" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.14999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Eslabon1.ipt" uid="Eslabon1.ipt_{82AB5AB6-46CB-6CDD-0565-EDBAD53DE70B}" version="{81F31B17-4B82-9F01-C761-3452337A4099}">
+<PartFile name="Eslabon1.ipt" type="Inventor Part"/>
+<MassProperties>
+<Mass>0.45352687509737027</Mass>
+<CenterOfMass>-1.8476745965334229 16.981802368316906 3.3064171291178601</CenterOfMass>
+<Inertia>2.9941924174672168 22.420450686962909 23.570157245721493 1.4329132318380288e-07 1.4288200785935605 -0.00078514359131440865</Inertia>
+</MassProperties>
+<GeometryFile name="Eslabon1_ipt_e5f973db.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Diffuse r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Specular r="0" g="0" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.14999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Eslabon2.ipt" uid="Eslabon2.ipt_{8CA78163-429C-B370-C041-19B7C0B92F1C}" version="{BDCF74B5-EF4A-F604-D051-71443F581597}">
+<PartFile name="Eslabon2.ipt" type="Inventor Part"/>
+<MassProperties>
+<Mass>0.35469421764288805</Mass>
+<CenterOfMass>11.978331067028583 21.758305013943055 -10.038792386063106</CenterOfMass>
+<Inertia>2.2700052637670307 9.7863538904133023 10.504758898379864 0.00011089904177060817 -0.32061250473020481 -5.0254328481969425e-05</Inertia>
+</MassProperties>
+<GeometryFile name="Eslabon2_ipt_9a9ca48c.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Diffuse r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Specular r="0" g="0" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.14999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Eslabon3.ipt" uid="Eslabon3.ipt_{C29D933B-49EB-63ED-5448-AE984CDB08CB}" version="{024E422E-2932-B041-0C29-497E41DB39B2}">
+<PartFile name="Eslabon3.ipt" type="Inventor Part"/>
+<MassProperties>
+<Mass>0.22622052585213545</Mass>
+<CenterOfMass>-21.753474455454008 7.0345294111689576 16.714067328136927</CenterOfMass>
+<Inertia>0.8952788499490707 6.1569828507890634 6.4580205680226932 0.00027370955007063457 -0.10163016139523824 -9.5198829934815878e-05</Inertia>
+</MassProperties>
+<GeometryFile name="Eslabon3_ipt_dd22e291.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Diffuse r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Specular r="0" g="0" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.14999999999999999</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
