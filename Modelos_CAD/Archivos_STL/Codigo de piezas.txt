@@ -1,0 +1,29 @@
+Codigo de pieza
+
+Base-AX12
+	B-01
+	B-02
+	B-03
+
+Base-MX28
+	BMX28-01
+	BMX28-02
+	BMX28-03
+
+Bridas
+	BM-AX12
+	BM-MX28
+
+Rodamiento_Giro_V7
+	Cilindro (10 por rodamiento)
+	Interior
+	Exterior_Inferior
+	Exterior_Superior
+
+Fuera de carpetas
+
+	Eje 	 	- 	Eje_01
+	Eslabon1 	-	Es_01
+	Eslabon2 	-	Es_02
+	Eslabon3 	-	Es_03
+	TapaEslabon 	-	TE_01
