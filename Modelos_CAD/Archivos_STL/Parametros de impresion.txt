@@ -1,0 +1,52 @@
+Instrucciones para Ultimaker Cura 12.0 o superior
+
+***Parametros para Sistema Bowden (Ender 3)***
+
+****Los parametros de Anycubic los anexo como el perfil de la impresora)
+
+
+Los parametros que se indican son los que se modifican, el resto se deja segun el perfil que genera Cura para la impresora que se usará
+
+
+
+Calidad
+	-Altura de capa entre 0.2 y 0.3 dependiendo la pieza (mas grande puede ser mayor altura de capa
+	-Altura de capa inicial igual que el anterior
+Paredes
+	-Recuento de lineas de pared: 3
+Superior e inferior
+	-Capas superiores e inferiores: 3
+	-Orden monotonica superior e inferior activado
+Relleno
+	-Para bridas, rodamientos 100%
+	-Para eje 30% la base y hacer cambio de relleno para el eje (instrucciones en powerpoint)
+	-Para eslabones desde 10% hasta 25%, mayor relleno mayor peso
+	-Porcentaje de superposicion del relleno 30%
+	-Patron de relleno lineas o giroide
+Material
+	-Temperatura de impresion 235°c con tubo PTFE blanco, si es el tubo capricorn (azul) hasta 245°c
+	-Temperatura de la capa de impresion entre 70°c y 80°c (80°c sin corrientes)
+Velocidad
+	-Velocidad de impresion maxima de 35 mm/s
+	-Velocidad de capa inicial 10 mm/s 
+	-Numero de capas mas lentas: 3
+Desplazamiento
+	-Retracciones habilitadas
+	-Retracciones entre
+		-Distancia de retraccion entre 2 a 4 mm 
+		-Velocidad de retraccion de 25 mm/s
+Refrigeracion
+	-Velocidad del ventilador maximo 40%
+Soporte
+	-soporte activado cuando sea necesario
+	-Estructura normal
+	-En todos los sitios
+	-Angulo del voladizo de 40 grados
+	-patron del soporte: Zigzag
+	-Densidad del soporte 10%
+	-Patron de la interfaz del soporte: Zigzag
+Adherencia de la placa de impresion
+	Segun sea necesario Falda o borde
+		-Borde se usa en casos de poco contacto del soporte o pieza
+	
+
