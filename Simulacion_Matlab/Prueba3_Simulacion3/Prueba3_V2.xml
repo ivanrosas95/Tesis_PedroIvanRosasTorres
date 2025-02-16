@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="Alcatraz" on="04/22/22||20:40:05" using="Simscape Multibody Link Version 7.4" from="Autodesk Inventor 2021 (Build 250183000, 183)"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="centimeter"/>
+<RootAssembly name="Prueba3_V2.iam" uid="Prueba3_V2.iam_{A56510E0-4516-ED0E-A532-EF858B443EE1}" version="{5EE601F4-8946-98EF-E4C6-DB850323AC58}">
+<AssemblyFile name="Prueba3_V2.iam" type="Inventor Assembly"/>
+<InstanceTree>
+<Instance name="Eslabon1:1" uid="Eslabon1:1" entityUid="Eslabon1.ipt_{08135EF7-4E5A-9E81-CD17-D7A41CD11769}">
+<Transform>
+<Rotation>-0.83424724828580532 0.55139054102111884 7.0350929601843658e-16 -0.55139054102111895 -0.83424724828580521 0 5.4477267827114958e-16 -4.5164755232880111e-16 1.0000000000000002</Rotation>
+<Translation>10.412760484114941 17.299394178359176 -3.4679566115937859</Translation>
+</Transform>
+</Instance>
+<Instance name="Eslabon2:1" uid="Eslabon2:1" entityUid="Eslabon2.ipt_{AEC34364-474F-0D1F-9579-B987B19E05F1}">
+<Transform>
+<Rotation>-0.82345045328537725 0.56738818368389277 0 -0.56738818368389288 -0.82345045328537714 -7.0510872687632604e-16 -4.1764928635823726e-16 -5.6850956242100951e-16 1</Rotation>
+<Translation>32.125969668079463 37.832185451418731 17.160954095244822</Translation>
+</Transform>
+</Instance>
+<Instance name="Eslabon3:1" uid="Eslabon3:1" entityUid="Eslabon3.ipt_{D73CA61D-4CC9-48B5-8A6D-45BE27BA6559}">
+<Transform>
+<Rotation>-0.83656339784687161 -0.54787013185872513 1.0587441809397345e-15 -0.54787013185872513 0.83656339784687161 3.1720343528956792e-15 -2.6235695086389087e-15 2.0735535223293016e-15 -1</Rotation>
+<Translation>29.877525076784696 1.7637399655455106 17.518225634314028</Translation>
+</Transform>
+</Instance>
+<Instance name="Base:1" grounded="true" uid="Base:1" entityUid="Base.ipt_{3AB95CF7-4216-7872-6FDC-3C92434A16E1}">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>12.405696251066836 -5.472952391241912 -14.763043722354537</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+</Constraints>
+<Joints>
+<Revolute name="De rotación:2">
+<BaseFrame>
+<InstancePath>
+<Uid>Eslabon2:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>0.86602540378444637 0.49999999999998646 1.2385264582538409e-15 0.49999999999998646 -0.86602540378444637 8.4884820665975201e-16 1.4970194794368674e-15 -1.1586088179731129e-16 -1</Rotation>
+<Translation>19.967111545436719 21.75776208255008 -11.230974404909789</Translation>
+</Transform>
+</BaseFrame>
+<FollowerFrame>
+<InstancePath>
+<Uid>Eslabon1:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>1 -2.9753977059954195e-14 0 -2.9753977059954195e-14 -1 0 0 0 -1</Rotation>
+<Translation>-9.8922874570455974 16.982093367953141 9.3979363019288122</Translation>
+</Transform>
+</FollowerFrame>
+</Revolute>
+<Revolute name="De rotación:3">
+<BaseFrame>
+<InstancePath>
+<Uid>Eslabon2:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>-1 1.5099033134902129e-14 0 1.5099033134902129e-14 1 0 0 0 -1</Rotation>
+<Translation>6.6171115454367122 21.757762082550293 -15.830974404909785</Translation>
+</Transform>
+</BaseFrame>
+<FollowerFrame>
+<InstancePath>
+<Uid>Eslabon3:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>-1 -1.2212453270876777e-15 -1.2157274055094008e-16 1.2212453270876779e-15 -1 -1.190091897356479e-15 -1.2157274055093863e-16 -1.1900918973564792e-15 1</Rotation>
+<Translation>-15.538082758499748 7.0343551976305827 16.188245943979062</Translation>
+</Transform>
+</FollowerFrame>
+</Revolute>
+<Revolute name="De rotación:4">
+<BaseFrame>
+<InstancePath>
+<Uid>Base:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>-6.5223443805907424e-16 -1 0 1 -6.5223443805907424e-16 1.4029622168617349e-16 -1.4029622168617349e-16 0 1</Rotation>
+<Translation>-0.51924078116317041 3.390188671372218 12.793023412689569</Translation>
+</Transform>
+</BaseFrame>
+<FollowerFrame>
+<InstancePath>
+<Uid>Eslabon1:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>2.5146551507759796e-14 -1 4.1633363423445451e-16 1 2.5146551507759796e-14 -5.3492759652349703e-16 5.3492759652348657e-16 4.1633363423446797e-16 1</Rotation>
+<Translation>9.4577125429543365 16.982093367952576 1.4979363019288208</Translation>
+</Transform>
+</FollowerFrame>
+</Revolute>
+</Joints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="Base.ipt" uid="Base.ipt_{3AB95CF7-4216-7872-6FDC-3C92434A16E1}" version="{F4056C00-E9FD-469D-BFCF-BC7BC5D5D9EC}">
+<PartFile name="Base.ipt" type="Inventor Part"/>
+<MassProperties>
+<Mass>0.20485012778224063</Mass>
+<CenterOfMass>-0.52537427877123022 2.2789560797999759 5.7971406374635368</CenterOfMass>
+<Inertia>2.6541357672682762 2.5565049322802671 2.0890114676684783 -0.19299318921147507 -0.0009005608612942524 -0.00039797151273862142</Inertia>
+</MassProperties>
+<GeometryFile name="Base_ipt_4d607c4e.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Diffuse r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Specular r="0" g="0" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.14999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Eslabon1.ipt" uid="Eslabon1.ipt_{08135EF7-4E5A-9E81-CD17-D7A41CD11769}" version="{3531E02D-82B3-EDA8-94DE-56D31FDC44C4}">
+<PartFile name="Eslabon1.ipt" type="Inventor Part"/>
+<MassProperties>
+<Mass>0.45352687509737027</Mass>
+<CenterOfMass>-1.8476745965334229 16.981802368316906 3.3064171291178601</CenterOfMass>
+<Inertia>2.9941924174672168 22.420450686962909 23.570157245721493 1.4329132318380288e-07 1.4288200785935605 -0.00078514359131440865</Inertia>
+</MassProperties>
+<GeometryFile name="Eslabon1_ipt_b27b32a8.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Diffuse r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Specular r="0" g="0" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.14999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Eslabon2.ipt" uid="Eslabon2.ipt_{AEC34364-474F-0D1F-9579-B987B19E05F1}" version="{722CAE79-E95A-B609-F85D-2FF072AEED08}">
+<PartFile name="Eslabon2.ipt" type="Inventor Part"/>
+<MassProperties>
+<Mass>0.3546942108609164</Mass>
+<CenterOfMass>11.978331108398002 21.758305019909315 -10.03879236079983</CenterOfMass>
+<Inertia>2.2700052527427035 9.7863538468832711 10.504758867504396 0.00011090183956548571 -0.32061248534270997 -5.025021097389981e-05</Inertia>
+</MassProperties>
+<GeometryFile name="Eslabon2_ipt_8750265a.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Diffuse r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Specular r="0" g="0" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.14999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Eslabon3.ipt" uid="Eslabon3.ipt_{D73CA61D-4CC9-48B5-8A6D-45BE27BA6559}" version="{F497FCBA-3CF7-CD87-995D-324522E68329}">
+<PartFile name="Eslabon3.ipt" type="Inventor Part"/>
+<MassProperties>
+<Mass>0.22622052585213545</Mass>
+<CenterOfMass>-21.753474455454008 7.0345294111689576 16.714067328136927</CenterOfMass>
+<Inertia>0.8952788499490707 6.1569828507890634 6.4580205680226932 0.00027370955007063457 -0.10163016139523824 -9.5198829934815878e-05</Inertia>
+</MassProperties>
+<GeometryFile name="Eslabon3_ipt_cfe1f531.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Diffuse r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Specular r="0" g="0" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.14999999999999999</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
